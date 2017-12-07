@@ -18,11 +18,11 @@ var devCmd = &cobra.Command{
 	Run: func(cmd *cobra.Command, args []string) {
 		switch args[0] {
 			case "alerter":
-				service.AlerterService().SnedDayAlerter()
+				service.AlerterService("slack").SnedDayAlerter()
 			case "SlackApi":
 				api.SlackApi().SendMessage("數據異常警示", "單一遊戲場次累積10萬場，RTP > 100%現象")
 			default:
 				fmt.Print("default")
-			}
+		}
 	},
 }

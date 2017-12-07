@@ -1,9 +1,9 @@
 /**
- * 設定檔操作類別，固定讀取執行檔路徑下的 api-config.yml
+ * 設定檔操作類別，固定讀取執行檔路徑下的 project_path/config
  *
  *  Usage:
  * 	c := config.Instance()
- *	ip := c.Setting.GetString("ip")
+ *	key := c.Setting.GetString(key_name)
  */
 package config
 
